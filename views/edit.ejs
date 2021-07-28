@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Player Editor</h1>
+    <form action="/brawl/<%=player.id%>?_method=PUT" method="POST">
+      Tag: <input type="text" name="tag" value="<%=player.tag%>" /><br/>
+      Trophies: <input type="text" name="trophies" value="<%=player.trophies%>" /><br/>
+      Squad: <input type="text" name="squad" value="<%=player.squad%>" />
+      <input type="submit" name="" value="Update Player">
+    </form>
+
+
+  </body>
+</html>
