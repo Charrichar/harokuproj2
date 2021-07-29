@@ -4,12 +4,15 @@ const router = express.Router()
 
 
 router.get('/', (req, res) => {
+  // let data
+  // client.playerByTag( ).then(res => data=res)
   SpotLightPlayer.find({}, (error, players) => {
 
 
   res.render('index.ejs',
   {
-    spotLight: players
+    spotLight: players,
+    // brawlStarPlayer: data
   }
 )
 })

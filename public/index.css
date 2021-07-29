@@ -6,30 +6,63 @@ body{
   /* position: fixed; */
   /* width: 100vw; */
   /* height: 100vh; */
-text-align: center;
+/* margin: 0 auto; */
+}
 
-z-index: 1;
+
+
+
+.container{
+  margin: 0;
+  padding: 0
+}
+
+
+.page-greeting{
+  position: relative;
+  width:575px;
 }
 
 h1{
   font-family: 'Hammersmith One', sans-serif;
+  z-index: 2;
+  position: absolute;
+  left: 280px;
+  width: 100%;
   font-size:60px;
   color: white;
   text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  text-align: center;
 }
 
+.squeak{
+  display:block;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
 
-.container{
 }
+
 .addPlayer{
   position: absolute;
   top: 5px;
   right:5px;
 }
-.squeak{
-  width: 575px;
+
+.highlight-players{
+  display: flex;
+  width:100%;
+
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  top: 200px;
-  z-index: -1;
-  right: 670px;
+}
+
+.player-spot{
+  width: 70vw;
+  background-color: purple;
+  border: 2px solid yellow;
+  border-radius: 10%;
+  text-align: center;
 }
